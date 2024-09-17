@@ -1,0 +1,21 @@
+/* Estilos personalizados */
+
+body {
+    padding-top: 56px; /* Espaço para o cabeçalho fixo */
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 1030;
+}
