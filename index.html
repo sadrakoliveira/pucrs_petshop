@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="bg-primary text-white p-3">
+        <div class="container">
+            <h1>PetShop</h1>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">PetShop</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#produtos">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicos">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cadastro">Cadastro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Visualização de Produtos -->
+    <section id="produtos" class="container my-5">
+        <h2>Produtos</h2>
+        <div id="carouselProdutos" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://via.placeholder.com/800x400?text=Produto+1" class="d-block w-100" alt="Produto 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Produto 1</h5>
+                        <p>Descrição do produto 1.</p>
+                        <p>Valor: R$100,00</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://via.placeholder.com/800x400?text=Produto+2" class="d-block w-100" alt="Produto 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Produto 2</h5>
+                        <p>Descrição do produto 2.</p>
+                        <p>Valor: R$150,00</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselProdutos" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselProdutos" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Visualização de Serviços -->
+    <section id="servicos" class="container my-5">
+        <h2>Serviços</h2>
+        <ul class="list-group">
+            <li class="list-group-item">Serviço 1 - R$50,00</li>
+            <li class="list-group-item">Serviço 2 - R$80,00</li>
+            <li class="list-group-item">Serviço 3 - R$100,00</li>
+        </ul>
+    </section>
+
+    <!-- Formulário de Cadastro -->
+    <section id="cadastro" class="container my-5">
+        <h2>Cadastro</h2>
+        <form>
+            <fieldset>
+                <legend>Cadastro de Cliente</legend>
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" class="form-control" id="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="endereco">Endereço</label>
+                    <input type="text" class="form-control" id="endereco" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" class="form-control" id="telefone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Cadastro de Pet</legend>
+                <div class="form-group">
+                    <label for="nomePet">Nome do Pet</label>
+                    <input type="text" class="form-control" id="nomePet" required>
+                </div>
+                <div class="form-group">
+                    <label for="tipoPet">Tipo</label>
+                    <input type="text" class="form-control" id="tipoPet" required>
+                </div>
+                <div class="form-group">
+                    <label for="racaPet">Raça</label>
+                    <input type="text" class="form-control" id="racaPet" required>
+                </div>
+                <div class="form-group">
+                    <label for="temperamentoPet">Temperamento</label>
+                    <input type="text" class="form-control" id="temperamentoPet" required>
+                </div>
+            </fieldset>
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer id="contato" class="bg-dark text-white text-center p-3">
+        <div class="container">
+            <p>&copy; 2024 PetShop. Todos os direitos reservados.</p>
+            <p>Contato: contato@petshop.com.br</p>
+            <a href="#" class="text-white">Home</a> | 
+            <a href="#produtos" class="text-white">Produtos</a> | 
+            <a href="#servicos" class="text-white">Serviços</a> | 
+            <a href="#cadastro" class="text-white">Cadastro</a> | 
+            <a href="#contato" class="text-white">Contato</a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="scripts.js"></script>
+</body>
+</html>
